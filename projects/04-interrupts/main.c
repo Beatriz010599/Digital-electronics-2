@@ -59,6 +59,7 @@ int main(void)
  */
 ISR(TIMER0_OVF_vect)
 {
+    GPIO_toggle(PORTB, LED_GREEN)
     // TODO: Toggle green LED
 }
 
